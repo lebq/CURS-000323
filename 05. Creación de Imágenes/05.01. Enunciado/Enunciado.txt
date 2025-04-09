@@ -1,0 +1,5 @@
+--Creación de Imágenes
+Crear imágenes de aplicaciones, APIs o servicios desarrollados en algún lenguaje de
+programación (Java, Net, Node.js, Python, Php, Go, etc). Utilizar Dockerfile
+personalizados, se deberán crear contenedores de dichas imágenes y verificar su
+funcionamiento.

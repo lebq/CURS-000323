@@ -1,0 +1,5 @@
+--Conectando Tres Contenedores
+Seleccionar imágenes que permitan crear contenedores e intégralos utilizando sus IPs
+Internos (usar inspect). Sugerimos utilizar imágenes de base de datos y GUIs, stacks
+tecnológicos como Kafka/RabbitMQ, ELK/EFK, etc. Los casos deben imágenes diferentes a los
+desarrollados en clase.

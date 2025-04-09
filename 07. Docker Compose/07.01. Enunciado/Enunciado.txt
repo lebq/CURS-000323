@@ -1,0 +1,4 @@
+--Docker Compose
+Crear un stack de servicios relacionados, considerando como mínino cuatro
+imágenes distintas creadas por terceros y usted mismo; debe incluir cinco
+contenedores (uno de ellos debe exponerse en diferentes puertos)

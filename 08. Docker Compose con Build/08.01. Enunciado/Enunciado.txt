@@ -1,0 +1,5 @@
+--Docker Compose con Build
+Crear un stack de servicios relacionados, considerando la creación de imágenes en
+caliente (uso de Dockerfile y context). Deber realizarse cualquier cambio en el código
+fuente de la aplicación, API o servicios y generar los contenedores para verificar los
+cambios.

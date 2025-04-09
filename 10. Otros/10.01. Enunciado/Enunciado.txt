@@ -1,0 +1,3 @@
+--Otros
+Otros comandos, aplicaciones o aplicaciones de Docker o Docker Compose
+como parte de su investigación y complemento a su proceso de entrenamiento.

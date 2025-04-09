@@ -1,0 +1,5 @@
+--Secrets y Volumen
+Crear y utilizar secrets en linea o en archivos y utilizarlos en Docker Compose o en la
+creación de contenedores en linea. También debe crear y utilizar volúmenes y
+demostrar la persistencia de datos posterior a la eliminación de los contenedores;
+crear nuevos contenedores y reutilizar dichos volúmenes.

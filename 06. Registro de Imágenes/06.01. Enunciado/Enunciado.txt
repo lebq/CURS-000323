@@ -1,0 +1,5 @@
+--Registro de Imágenes
+Publicar sus imágenes creadas por usted en dos o más repositorios públicos
+y privados. Utilizar Docker Hub y una nube especifica (AWS, Azure, Google, IBM Cloud,
+Oracle Cloud, u otras). También se deberá realizar la descarga de imágenes, crear
+contenedores y verificar su funcionamiento.
