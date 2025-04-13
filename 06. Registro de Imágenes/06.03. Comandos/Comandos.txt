@@ -1,0 +1,32 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+PUSH
+	.NET
+		docker build -t lbaldeon25/miappdockernet7:1.0 .
+		docker push lbaldeon25/miappdockernet7:1.0
+		
+	NODE JS
+		docker build -t lbaldeon25/miappdockernodejs:1.0 .
+		docker push lbaldeon25/miappdockernodejs:1.0
+
+ELIMINAR CONTENEDORES E IMAGENES
+	docker ps -a
+	docker rm 4cb4
+	docker rm 059c
+	docker images
+	docker rmi 4acd
+	docker rmi de33
+
+PULL
+	.NET 
+		docker pull lbaldeon25/miappdockernet7:1.0
+		docker images
+		docker run -d -p 8087:80 --name my-appdockernet7-v1 lbaldeon25/miappdockernet7:1.0
+		docker ps
+		
+	NODE JS
+		docker pull lbaldeon25/miappdockernodejs:1.0
+		docker images
+		docker run -d -p 3002:3000 --name my-appdockernodejs-v1 lbaldeon25/miappdockernodejs:1.0
+		docker ps

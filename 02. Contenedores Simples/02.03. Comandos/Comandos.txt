@@ -1,0 +1,28 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+MARIADB
+
+	docker pull mariadb:11-ubi
+	docker images
+	docker run --name my-mariadb-pf -e MARIADB_ROOT_PASSWORD=123456 -d mariadb:11-ubi
+	docker ps
+	docker ps -a
+	docker inspect d797
+	docker logs d797
+	docker rename my-mariadb-pf my-mariadb-pf-v2
+	docker stop d797
+	docker rm d797
+
+ORACLE
+
+	docker pull gvenzl/oracle-xe:21-slim
+	docker images
+	docker run --name my-oracle -d -p 1521:1521 -e ORACLE_PASSWORD=123456 gvenzl/oracle-xe:21-slim
+	docker ps
+	docker ps -a
+	docker inspect d73c
+	docker logs d73c
+	docker rename my-oracle my-oracle-v2
+	docker stop d73c
+	docker rm d73c

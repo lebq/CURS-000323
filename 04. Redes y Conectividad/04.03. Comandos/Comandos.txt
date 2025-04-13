@@ -1,0 +1,55 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+docker network ls
+docker network create network-pf
+docker inspect network-pf
+docker network rm 06ce
+docker ps -a
+
+CONTENEDORES YA CREADOS
+
+	MYSQL
+
+		docker start ef37
+		docker ps
+		docker inspect ef37
+		docker network disconnect bridge mymysql-docker-cbce
+		docker inspect ef37
+		docker network connect bridge mymysql-docker-cbce
+		docker inspect ef37
+
+	POSTGRESQL
+
+		docker start 926a
+		docker ps
+		docker inspect 926a
+		docker network disconnect bridge my-postgres-pf
+		docker inspect 926a
+		docker network connect bridge my-postgres-pf
+		docker inspect 926a
+
+NUEVOS CONTENEDORES
+
+	POSTGRESQL
+		docker network ls
+		docker network create network-pf
+		docker run --name my-postgres-network-pf --network network-pf -p 5432:5432 -e POSTGRES_PASSWORD=123456 -d postgres:17.4
+		docker ps
+		docker inspect ad81
+		docker network disconnect network-pf my-postgres-network-pf
+		docker inspect ad81
+		docker network connect network-pf my-postgres-network-pf
+		docker inspect ad81
+
+	MARIADB
+
+		docker run --name my-mariadb-network-pf --network network-pf -p 3308:3306 -e MARIADB_ROOT_PASSWORD=112233 -d mariadb:11.8-rc
+		docker ps
+		docker inspect c454
+		docker network disconnect network-pf my-mariadb-network-pf
+		docker inspect c454
+		docker network connect network-pf my-mariadb-network-pf
+		docker inspect c454
+
+docker inspect network-pf

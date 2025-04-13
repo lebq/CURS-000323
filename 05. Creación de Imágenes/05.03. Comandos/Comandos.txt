@@ -1,0 +1,14 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+.NET
+	docker build -t miappdockernet7 .
+	docker images
+	docker run -d -p 8081:80 --name my-appdockernet7-pf miappdockernet7
+	docker ps
+
+NODE JS
+	docker build -t miappdockernodejs .
+	docker images
+	docker run -d -p 3001:3000 --name my-appdockernodejs-pf miappdockernodejs
+	docker ps
