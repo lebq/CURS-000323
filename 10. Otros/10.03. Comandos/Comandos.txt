@@ -1,0 +1,47 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+docker login
+	Acceder a un registro
+	
+docker pause 926a
+	Pausa un contenedor
+	
+docker unpause 926a
+	Despausa un contenedor
+	
+docker restart 926a
+	Reinicia un contenedor.
+	
+docker diff 926a
+	Inspecciona los cambios en los directorios y archivos del sistema de archivos del contenedor.
+	
+docker top 926a
+	Muestra todos los procesos en ejecución de un contenedor existente.
+
+docker search oracle
+	Busca en Docker Hub imágenes con el término especificado.
+	
+docker history mysql:8.0
+	Muestra el historial de una imagen.
+
+docker inspect mysql:8.0
+	Muestra información de bajo nivel sobre una imagen.
+	
+docker plugin ls
+	Muestra una lista de plugins.
+
+docker info
+	Muestra información sobre la instalación de Docker.
+	
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my-postgres-pf
+	Muestra la IP de la red en la que se encuentra tu contenedor a traves del nombre.
+	
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 926a
+	Muestra la IP de la red en la que se encuentra tu contenedor a traves del ID.
+	
+docker ps -a -q -f status=exited
+	Muestra solo los IDs de contenedores detenidos.
+	
+docker ps -q
+	Muestra solo los IDs de los contenedores en ejecucion.
