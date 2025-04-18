@@ -1,0 +1,54 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+docker ps
+docker images
+docker network ls
+docker network inspect app-products-manager-stack_apinetwork
+
+API
+	DOCKERFILE
+		docker build -t mynetcorewebapi7 .
+	
+	DOCKER-COMPOSE
+		docker-compose up -d
+	
+SQLSERVER
+	Database Engine
+		localhost,1433
+	Login
+		sa
+	Password
+		Lb4ld30n$
+
+POSTMAN
+	http://localhost:5002/api/Productos
+	http://localhost:5003/api/Productos
+
+MYSQL
+	docker ps
+	docker exec -it mysql_container bash
+	mysql -u root -p
+	147258369
+	show databases;
+
+POSTGRESQL
+	docker ps
+	docker exec -it postgresql_container bash
+	psql -U postgres
+	147258369
+	\l
+
+ORACLE
+	docker ps
+	docker exec -it oracle_container bash
+	sqlplus / as sysdba
+	ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
+	CREATE USER lebq IDENTIFIED BY lebq;
+	GRANT ALL PRIVILEGES TO lebq;
+	CONNECT lebq/lebq@ORCL
+	create table tbl_empleado(id number primary key, nombre varchar2(50));
+	insert into tbl_empleado values(1, 'Jose');
+	insert into tbl_empleado values(2, 'Carmen');
+	COMMIT;
+	select * from tbl_empleado;
