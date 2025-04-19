@@ -1,0 +1,22 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+docker ps
+docker images
+docker network ls
+docker network inspect mynetcorewebapi7_apinetwork
+
+API
+	DOCKER-COMPOSE
+		docker-compose -f docker-compose-build.yml up --build
+	
+SQLSERVER
+	Database Engine
+		localhost,1433
+	Login
+		sa
+	Password
+		Lb4ld30n$
+
+POSTMAN
+	http://localhost:5004/api/Productos
