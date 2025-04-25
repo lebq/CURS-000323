@@ -3,14 +3,14 @@ Comandos
 *********************************************************************************
 DBEAVER
 
-	docker run --name my-cloudbeaver-pf -p 8085:8978 dbeaver/cloudbeaver:25
+	docker run --name my-cloudbeaver-pf -p 8085:8978 -d dbeaver/cloudbeaver:25
 	docker images
 	docker ps
 	dpcker ps -a
 
 SQLSERVER
 
-	docker run -e "ACCEPT_EULA-Y" -e "MSSQL_SA_PASSWORD"=Lb4ld30n$" --name my-sqlserver-pf -d mcr.microsoft.com/mssql/server:2019-latest
+	docker run --name my-sqlserver-pf -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Lb4ld30n$" -d mcr.microsoft.com/mssql/server:2019-latest
 	docker images
 	docker ps
 	docker ps -a
@@ -23,7 +23,7 @@ SQLSERVER
 
 ORACLE
 
-	docker run -d --name my-oracle-pf -e ORACLE_PWD=123456 -e ORACLE_SID=ORCL container-registry.oracle.com/database/enterprise:21.3.0.0
+	docker run --name my-oracle-pf -e ORACLE_PWD=123456 -e ORACLE_SID=ORCL -d container-registry.oracle.com/database/enterprise:21.3.0.0
 	docker images
 	docker ps
 	docker ps -a
@@ -41,7 +41,7 @@ ORACLE
 	
 MARIADB
 
-	docker run --name my-mariadb-pf -e MARIADB_ROOT_PASSWORD=112233 mariadb:11.8-rc
+	docker run --name my-mariadb-pf -e MARIADB_ROOT_PASSWORD=112233 -d mariadb:11-ubi
 	docker images
 	docker ps
 	docker ps -a

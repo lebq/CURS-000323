@@ -3,8 +3,6 @@ Comandos
 *********************************************************************************
 docker ps
 docker images
-docker network ls
-docker network inspect app-products-manager-stack_apinetwork
 
 API
 	DOCKERFILE

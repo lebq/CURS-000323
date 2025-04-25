@@ -22,11 +22,11 @@ PULL
 	.NET 
 		docker pull lbaldeon25/miappdockernet7:1.0
 		docker images
-		docker run -d -p 8087:80 --name my-appdockernet7-v1 lbaldeon25/miappdockernet7:1.0
+		docker run --name my-appdockernet7-v1 -p 8087:80 -d lbaldeon25/miappdockernet7:1.0
 		docker ps
 		
 	NODE JS
 		docker pull lbaldeon25/miappdockernodejs:1.0
 		docker images
-		docker run -d -p 3002:3000 --name my-appdockernodejs-v1 lbaldeon25/miappdockernodejs:1.0
+		docker run --name my-appdockernodejs-v1 -p 3002:3000 -d lbaldeon25/miappdockernodejs:1.0
 		docker ps

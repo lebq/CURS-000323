@@ -18,11 +18,11 @@ ORACLE
 
 	docker pull gvenzl/oracle-xe:21-slim
 	docker images
-	docker run --name my-oracle -d -p 1521:1521 -e ORACLE_PASSWORD=123456 gvenzl/oracle-xe:21-slim
+	docker run --name my-oracle-pf -e ORACLE_PASSWORD=123456 -d gvenzl/oracle-xe:21-slim
 	docker ps
 	docker ps -a
 	docker inspect d73c
 	docker logs d73c
-	docker rename my-oracle my-oracle-v2
+	docker rename my-oracle-pf my-oracle-pf-v2
 	docker stop d73c
 	docker rm d73c

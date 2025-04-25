@@ -2,29 +2,25 @@
 Comandos
 *********************************************************************************
 SECRETS
-	docker-compose -f docker-compose-secrets.yml up -d
+	
 	SQLSERVER
+	docker-compose -f docker-compose-secrets.yml up -d
 		Server: 	localhost,1435
 		Login:		sa
 		Password:	Lb4ld30n$
-		
-	docker swarm init
-	docker secret ls
-	echo "Lb4ld30n" | docker secret create sqlserver_sa_password -
-	docker secret ls
 
 VOLUMENES
-	docker compose -f docker-compose-volumenes-sqlserver.yml up -d
-	
+
 	SQLSERVER
+	docker-compose -f docker-compose-volumenes-sqlserver.yml up -d
 		Server: 	localhost,1434
 		Login:		sa
 		Password:	Lb4ld30n$
 	docker-compose -f docker-compose-volumenes-sqlserver.yml down
 	docker compose -f docker-compose-volumenes-sqlserver.yml up -d
 	
-	docker compose -f docker-compose-volumenes-mysql.yml up -d
 	MYSQL
+	docker compose -f docker-compose-volumenes-mysql.yml up -d
 		Hostname:	localhost
 		Port:		3308
 		Username:	root
